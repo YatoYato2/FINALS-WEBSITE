@@ -2,9 +2,9 @@ body {
   display: block;
   overflow-x: hidden;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-image: url('images/IMG_7497.JPG'); /* Path to the image */
-  background-size: cover; /* Make the background cover the full screen */
-  background-position: center; /* Center the image */
+  background-image: url('images/IMG_7497.JPG'); 
+  background-size: cover; 
+  background-position: center;
   background-color: black;
 }
 
@@ -137,7 +137,6 @@ html {
   transition: transform 0.3s ease-in-out;
   
 }
-/* Custom spacing for specific sections */
 section {
   margin-bottom: 30px;
 }
@@ -145,13 +144,10 @@ section {
 .card {
   margin-bottom: 20px;
 }
-
-/* Add padding to the "hero" section */
 #hero {
   padding-top: 60px;
 }
 
-/* Style for navbar when it becomes fixed */
 .auto-hiding-navbar {
   transition: top 0.3s;
 }
