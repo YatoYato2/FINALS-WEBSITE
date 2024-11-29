@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+    <style>
+      /* Enable smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo" <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWCAYAAABVVmH3AAAAAXNSR0IArs4c6QAABCxJREFUeF7tnNFt3DAMhqVNkknaTNJkkjaTNJkk6SRJJ1HvRyzAOJxFUiYl06WBQx5sU9IniiIpOjnFZUIgm0gNoSnAGilBgA2wRgSMxIbGBlgjAkZiD6OxpZTHlNK3lNLdjrH+ubz/knP+3CFD5dVDgC2lvKWUvquM6EvI/Wy408EaQK3zMxXuVLCGUKfDnQZ2ANSpcKeAHQh1GtzhYCdAnQJ3KFgB1OeUksRl+sl004ZtaMPACqA+5ZxfJK5XKQW+L1w2jg88BO4QsJZQ6wQcDa452BFQjwhXBHYVdiJK4iw77ooWL/8twULN5fQPth4/UbjMBivQPE5n18+oQe3UXEl/ARj9fadeIsEuGvBBCeq8rw51AFw08Zxz/tUaMwcsBMCd0b7MoA6C2/QummANtdUc6gC4Ta2lwFpo6zCoxnDfc84PW8uYAvv7siMiAa1xsQ2/RmPXMpbVh/EMyftSYFsJaERHr0wIn7MTz+t+llIkcMFg63rY8hD2gB2+pJmTqPpYKaUEWFWkX8JOD3axkXcc51yT7+nALnYQtvCWD11TirDx2J3JSKgX9mnAXkxaj4uHjRR+pSSHy2LtHqxC8gRQX6lQk0Vz9ZBrsMuyb7k1Eh5kHC8R5hasMtTKDNUwTxKAW8+6BGuYiwAnFc31Cla7tOha8TYjI642uwO7nEYgdqcunNjiqgeMOLnAj3Myi1D6nmqgdd8jWCTPW8c7zaTNYkaQIKJyxbtCb1dgGdrK1jSG39tM71Ha7A0slY5k20ZGOpA9SbcgewPbMgNiV4nhXbAn6hquN7CtVFyXTSQAdLtebsAytKurBIg4ng+w+RLsUxvKhi1s2W2xealtnElju+xhKaVlt8+vsYysfBcEQrO67Dajr8c68yLsodg9KqVQ7luX3fYIFhFTK5xl20ROdqzXbnsEi1CWqgcjTQIH6vJBXXcK0c3mtdptqeWLR2/mCwR5AsjoNgPuNHbpMEdr6zzUGlX8lVTmkFpPuXbuNHaB23NwSLGo93clX9z5sTdicQu40Gy4QrtPbV1q7MokcPKqXE1VLb5zC3a15DQ0V+wDU7PlHuxKe3tKLU1qClx6BcQ5E0zDD0YtqxlQ95sXARguWa1lXZ+PASh2/d2b039hCqhBzrh/Chs7AxzVZoClCHXeD7Cd4KjXAixFqPN+gO0ER702AyxqqsxK1KkBD7xv8jkSJ2c6cIzHaqp1MkF950UdoRxrpGN708xLUGAR9WiVsI8dtn1r/R8pL0kIjayT/TDHtkBm0VhVJ0QxxNghHaM1sqiECxYJkJ503jEw6PWCnURngV2l0Go6r2aaNP/hjt7w9SWhTP+v5BsyEVj9/p5XYoA1mtsAG2CNCBiJDY0NsEYEjMSGxgZYIwJGYkNjA6wRASOxobEB1oiAkdjQ2ABrRMBI7D+gbSuESSeHaQAAAABJRU5ErkJggg=="/>
+          Tindahan ni OYAT
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Ano ang Tinda?</h1>
+            <p style="color:white;">This is my personal portfolio!</p>
+            <!-- Update Learn more button -->
+            <a href="#about-us" class="btn btn-dark btn-large">Learn more</a>
+          </div>
+          <div class="col img-col">
+            <img src="D:\GAVIN\RANDOM\sadasd\IMG_7504.JPG">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-us">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <img src="D:\GAVIN\pics\EMEMEMM\SAM_5979.jpg" class="img-fluid" alt="About Us">
+          </div>
+          <div class="col text-col">
+            <h1>About me</h1>
+            <p>I am a college student aged 19. I am a free-lance photographer. I am an arts student that is eager to learn and willing to adapt to any profession. I am a skilled, hardworking student who can complete things both independently and as part of a team. I'm quite laidback and don't get bothered by most things. I like to think I'm generous and kind-hearted. Most of  activities are enjoyable for me.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="column1" style="background-image: url('images/SEULGI.png'); background-size: cover; background-position: center; height: 300px;">
+            <h2>Digital Art</h2>
+          </div>
+    
+          <div class="column2" style="background-image: url('images/Screenshot 2024-11-29 151229.png'); background-size: cover; background-position: center; height: 300px;">
+            <h2>Traditional Art</h2>
+          </div>
+    
+          <div class="column3" style="background-image: url('images/page8.png'); background-size: cover; background-position: center; height: 300px;">
+            <h2>Edits</h2>
+          </div>
+    
+          <div class="column4" style="background-image: url('images/IMG_7281.jpg'); background-size: cover; background-position: center; height: 300px;">
+            <h2>Photography</h2>
+          </div>
+    
+          <br>
+    
+          <div class="column5" style="background-image: url('images/maloi_smol.png'); background-size: cover; background-position: center; height: 300px;">
+            <h2>Digital Art</h2>
+          </div>
+    
+          <div class="column6" style="background-image: url('images/Screenshot 2024-11-29 151229.png'); background-size: cover; background-position: center; height: 300px;">
+            <h2>Traditional Art</h2>
+          </div>
+    
+          <div class="column7" style="background-image: url('images/surrealism.jpg'); background-size: cover; background-position: center; height: 300px;">
+            <h2>Edits</h2>
+          </div>
+    
+          <div class="column8" style="background-image: url('images/IMG_7415.JPG'); background-size: cover; background-position: center; height: 300px;">
+            <h2>Photography</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    <!-- Other sections remain unchanged -->
+    <section id="projects">
+      <!-- Your content for projects -->
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <!-- Make the heading a clickable link -->
+            <h1><a href="https://www.instagram.com/" target="_blank" style="color: inherit; text-decoration: none;">Contact Me!</a></h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
