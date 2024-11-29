@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <!-- Link to Bootstrap for styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+<body class="d-flex justify-content-center align-items-center" style="height: 100vh; background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center">Sign Up</h2>
+            <form id="signUpForm">
+              <div class="mb-3">
+                <label for="newUsername" class="form-label">Username</label>
+                <input type="text" class="form-control" id="newUsername" required>
+              </div>
+              <div class="mb-3">
+                <label for="newEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="newEmail" required>
+              </div>
+              <div class="mb-3">
+                <label for="newPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="newPassword" required>
+              </div>
+              <button type="submit" class="btn btn-dark btn-block">Sign Up</button>
+            </form>
+            <p class="mt-3 text-center">Already have an account? <a href="login.html">Log in</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script>
+    // JavaScript for sign-up functionality
+    document.getElementById('signUpForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const username = document.getElementById('newUsername').value;
+      const email = document.getElementById('newEmail').value;
+      const password = document.getElementById('newPassword').value;
+
+      // Simple validation
+      if (username && email && password) {
+        // Save the user data to localStorage (you could also use a backend here)
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+        users.push({ username, email, password });
+        localStorage.setItem('users', JSON.stringify(users));
+        
+        alert('Sign-up successful! Please log in.');
+        window.location.href = 'index.html'; // Redirect to login page after successful signup
+      } else {
+        alert('Please fill in all fields.');
+      }
+    });
+  </script>
+</body>
+</html>
