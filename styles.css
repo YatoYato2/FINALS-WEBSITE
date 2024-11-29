@@ -137,26 +137,6 @@ html {
   transition: transform 0.3s ease-in-out;
   
 }
-.column5,
-.column6,
-.column7,
-.column8 {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  height: 300px;
-}
-
-.column5:hover,
-.column6:hover,
-.column7:hover,
-.column8:hover {
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  transition: transform 0.3s ease-in-out;
-}
-
 /* Custom spacing for specific sections */
 section {
   margin-bottom: 30px;
